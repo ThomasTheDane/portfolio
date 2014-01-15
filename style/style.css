@@ -1,0 +1,168 @@
+/* Bootstrap
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+body{
+	background-color: #EEEEEE;
+}
+
+.center{
+	text-align: center;
+}
+
+#navBarContainer{
+	height: 13%;
+}
+
+#nameContainer{
+	background-image: url('../images/map.png');
+	background-color: #003550;
+	height: 74%;
+	width: 100%;
+}
+
+#nameImage{
+	height: 100%;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#proficiencyContentContainer{
+	height: 87%;
+}
+
+#proficiencyTitleContainer{
+
+}
+
+#languagesContainer{
+	float:left;
+	width: 49.5%;
+}
+
+#languagesTitle{
+	max-width: 300px;
+	text-align: center;
+}
+
+#langaugesImageContainer{	
+	text-align: center;
+}
+
+#allLanguagesImg{
+	height: 87%;
+	display: inline;
+}
+
+.divider{
+	background-color: #000;
+	float: left;
+	width: .3%;
+	height: 100%;
+}
+
+#platformsContainer{
+	float:right;
+	width: 49.5%;	
+}
+
+#platformsTitle{
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#platformsImageContainer{	
+	text-align: center;
+}
+
+#allPlatformsImg{
+	height: 82%;
+	display: inline;
+}
+
+#workContainer{
+	height: 100%;
+}
+
+#workTileContiner{
+
+}
+
+#grabcadAndroid{
+	margin-top: 100px;
+}
+
+.titleContainer{
+	background-color: #eeeeee;
+	height: 13%;	
+}
+
+.title{
+	margin-top: 0px;
+	padding-top: 20px;
+	font-weight: bolder;
+	font-size: 50px;
+	background-color: #202024;
+	color:#FFFFFF;
+}

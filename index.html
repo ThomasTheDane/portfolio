@@ -1,0 +1,80 @@
+<html>
+<head>
+	<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link href='style/style.css' rel='stylesheet' />
+</head>
+<body>
+	<div id='navBarContainer'>
+
+	</div>
+	<div id='nameContainer'>
+		<img src="images/name.png" id='nameImage'/>
+	</div>
+	<div id='proficiencyContainer'>
+		<div id='proficiencyTitleContainer' class='titleContainer' data-title="Proficiencies">
+			<h1 class='center title' id='proficienciesTitle'>Start the tour!</h1>
+		</div>
+		<div id='proficiencyContentContainer'>
+			<div id='languagesContainer'>
+				<h1 id='languagesTitle'>Languages:</h1>
+				<div id='langaugesImageContainer'>
+					<img src='images/languages/allLanguages.png' id='allLanguagesImg'/>
+				</div>
+			</div>
+			<div class='divider'></div>
+			<div id='platformsContainer'>
+				<h1 id='platformsTitle'>Platforms & Frameworks:</h1>
+				<div id='platformsImageContainer'>
+					<img src='images/platforms/allPlatforms.png' id='allPlatformsImg'/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='workContainer'>
+		<div id='workTitleContainer'>
+
+		</div>
+		<div id='workContentContainer' class='titleContainer' data-title='Work Experience'>
+			<h1 class='center title' id='workTitle'>Work Experience</h1>
+		</div>
+		<div class='container marketing'>
+		<div class="row featurette">
+			<div class="col-md-7">
+			<h2 class="featurette-heading">GrabCAD  <span class="text-muted">  Android Dev</span></h2>
+				<p class="lead">
+					May 2013 - September 2013
+					<ul class='lead'>
+						<li>Worked on a 3-person international team within the agile framework of scrum</li>
+						<li>Collaborated daily with both product and design departments to rapidly produce high quality features</li>
+						<li>Interfaced with Ruby on Rails API to show and organize content relating to collaborative CAD projects including the first 3D CAD file viewer on Android in history</li>
+						<li>Contributed over 23,000 lines of code through git source control management</li>
+						<li>Managed Alpha and Beta versions of app to elicit quick user feedback to rapidly fix issues and provide most useful features</li>
+						<li>Android app is currently live on Google Play </li>
+					</ul>
+	          	</p>
+	        </div>
+	        <div class="col-md-5">
+	          <img class="featurette-image img-responsive" id='grabcadAndroid' src="images/grabcad-android.png" alt="500x500">
+	        </div>
+        </div>
+      </div>
+	</div>
+</body>
+
+<script>
+$('.titleContainer').on('click', function (){
+	$('html, body').animate({
+		scrollTop: $(this).offset().top
+	}, 800);
+	$(this).html("<h1 class='center title' id='proficienciesTitle'>" + $(this).data('title') + "</h1>");
+});
+$(window).scroll(function(){
+	$(proficiencyTitleContainer).html("<h1 class='center title' id='proficienciesTitle'>Proficiencies</h1>");
+});
+
+</script>
+
+</html>

@@ -1,0 +1,10 @@
+{
+	"name": "ThomasNattestadPortfolio",
+	"versoin": "1.9",
+	"main":"server.js",
+	"dependencies":{
+		"connect":"1.8.7",
+		"express":"~3.4.7",
+		"sys":"*"
+	}
+}
