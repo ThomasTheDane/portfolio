@@ -33,6 +33,7 @@
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  margin: 0px;
 }
 
 
@@ -56,7 +57,7 @@
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+	margin-top: 70px;
   }
 }
 
@@ -69,18 +70,18 @@ body{
 }
 
 #navBarContainer{
-	height: 13%;
+	height: 0%;
 }
 
-#nameContainer{
+#frontContainer{
 	background-image: url('../images/map.png');
 	background-color: #003550;
-	height: 74%;
+	height: 100%;
 	width: 100%;
 }
 
 #nameImage{
-	height: 100%;
+	height: 50%;
 	width: 80%;
 	display: block;
 	margin-left: auto;
@@ -91,66 +92,28 @@ body{
 	height: 87%;
 }
 
-#proficiencyTitleContainer{
-
-}
-
-#languagesContainer{
-	float:left;
-	width: 49.5%;
-}
-
-#languagesTitle{
-	max-width: 300px;
-	text-align: center;
-}
-
-#langaugesImageContainer{	
-	text-align: center;
-}
-
-#allLanguagesImg{
+#langaugesAndPlatformsImg{
 	height: 87%;
-	display: inline;
-}
-
-.divider{
-	background-color: #000;
-	float: left;
-	width: .3%;
-	height: 100%;
-}
-
-#platformsContainer{
-	float:right;
-	width: 49.5%;	
-}
-
-#platformsTitle{
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#platformsImageContainer{	
-	text-align: center;
-}
-
-#allPlatformsImg{
-	height: 82%;
-	display: inline;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
 }
 
 #workContainer{
 	height: 100%;
 }
 
-#workTileContiner{
-
-}
-
 #grabcadAndroid{
 	margin-top: 100px;
+}
+
+#projectsContainer{
+	height: 110%;
+}
+
+#schoolContainer{
+	height: 100%;
 }
 
 .titleContainer{
@@ -158,11 +121,93 @@ body{
 	height: 13%;	
 }
 
+/*#frontDirectory{
+	background: url('../images/mask.png') no-repeat center;
+	background-size: 30%;
+}*/
+
+#test{
+	-webkit-mask-image: url('../images/mask.png');
+	-webkit-mask-size: 70%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+}
+
+#test:hover{
+	-webkit-mask-image: url('../images/mask.png');
+	-webkit-mask-size: 80%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+}
+
 .title{
 	margin-top: 0px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	font-weight: bolder;
 	font-size: 50px;
 	background-color: #202024;
 	color:#FFFFFF;
+}
+
+.frontNav{
+
+}
+
+.project{
+	/*position: absolute;*/
+	/*background: url('../images/mask.png') no-repeat center;*/
+	padding-top: 40px;
+	background-size: 100%;
+}
+
+.mask{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	vertical-align: center;
+	width: 100%;
+	position: absolute;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.mask:hover{
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+}
+
+/*.project{
+	-webkit-mask-image: url('../images/mask.png');
+	-webkit-mask-size: 90%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+}
+
+.project:hover{
+	-webkit-mask-image: url('../images/mask.png');
+	-webkit-mask-size: 100%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+}*/
+
+.projectImg{
+	width: 100%;
+}
+
+.proficiencyPiece{
+	border-style:solid;
+	border-width:5px;
+	position: absolute;
+	width: 100px;
+	/*height: 100px;*/
+	/*left: 100px;*/
+}
+
+a:hover{
+	text-decoration: none;
 }

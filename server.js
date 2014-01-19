@@ -16,3 +16,7 @@ app.get('/', function (req, res){
 //	res.render(__dirname + '/index.ejs', {});
 	res.sendfile(__dirname + '/index.html');
 });
+app.get('/transcript', function (req, res){
+	sys.log('sending transcript');
+	res.sendfile(__dirname + '/ThomasNattestadTranscript.pdf');
+})
