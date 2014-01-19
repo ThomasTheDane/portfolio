@@ -74,6 +74,18 @@
 					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/inibbles.png' class='projectImg'/></div>
 					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/videographer.png' class='projectImg'/></div>
 					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/boat.png' class='projectImg'/></div>
+					
+
+
+					<!-- <div class="top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/ourtube.png' class='projectImg'/></div>
+					<div class="top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/cubeon.png' class='projectImg'/></div>
+					<div class="top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/teamsnake.png' class='projectImg'/></div>
+					<div class="top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/cryptography.png' class='projectImg'/></div>
+
+					<div class="bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/sorting.png' class='projectImg'/></div>
+					<div class="bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/inibbles.png' class='projectImg'/></div>
+					<div class="bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/videographer.png' class='projectImg'/></div>
+					<div class="bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/boat.png' class='projectImg'/></div> -->
 				</div>
 			</div>
 		</div>
@@ -115,9 +127,7 @@ $(window).scroll(function(){
 $( window ).resize(function() {
 	sizeGlows();
 });
-var mouseOverProject = false;
 $('.project').on('mouseover', function (){
-	mouseOverProject = true;
 	$('.project').not(this).animate({
 		opacity: .3
 	}, {
@@ -125,15 +135,15 @@ $('.project').on('mouseover', function (){
 		queue: false
 	});
 });
-	$('.project').on('mouseout', function (){
-		mouseOverProject = false;
-		$('.project').animate({
-			opacity: 1
-		}, {
-			duration: 500,
-			queue: false
-		});
+
+$('.project').on('mouseout', function (){
+	$('.project').animate({
+		opacity: 1
+	}, {
+		duration: 500,
+		queue: false
 	});
+});
 
 function sizeGlows(){
 	var profPic = $('#langaugesAndPlatformsImg');

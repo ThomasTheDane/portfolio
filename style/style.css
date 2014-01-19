@@ -40,7 +40,6 @@
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 768px) {
 
   /* Remove the edge padding needed for mobile */
@@ -53,13 +52,13 @@
     font-size: 50px;
     margin-top: 50px;
   }
-
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
 	margin-top: 70px;
   }
+
 }
 
 body{
@@ -144,6 +143,19 @@ body{
 
 .frontNav{
 
+}
+
+@media (max-width: 992){
+	.project{
+		float:left;
+		width: 25%;
+	}
+}
+@media (max-width: 500){
+	.project{
+		float: none;
+		width: 100%;
+	}
 }
 
 .top.project{
