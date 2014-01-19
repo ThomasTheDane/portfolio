@@ -69,15 +69,11 @@ body{
 	text-align: center;
 }
 
-#navBarContainer{
-	height: 0%;
-}
-
 #frontContainer{
 	background-image: url('../images/map.png');
 	background-color: #003550;
-	height: 100%;
 	width: 100%;
+	min-height: 100%;
 }
 
 #nameImage{
@@ -86,6 +82,29 @@ body{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.frontNav{
+	font-weight: bolder;
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40%;
+	border-style:solid;
+	border-width:5px;
+	color: #EEEEEE;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.frontNav:hover{
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
 }
 
 #proficiencyContentContainer{
