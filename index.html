@@ -14,20 +14,25 @@
 			<div class='container marketing'>
 				<div class="row featurette">
 					<div class='row' id='projectsList'>
-						<div class="col-md-3"><div class='frontNav' id='navProficiencies'><h1 class='center'>Proficiencies</h1></div></div>
-						<div class="col-md-3"><div class='frontNav' id='navProjects'><h1 class='center'>Projects</h1></div></div>
-						<div class="col-md-3"><div class='frontNav' id='navWork'><h1 class='center'>Work Experience</h1></div></div>
-						<div class="col-md-3"><div class='frontNav' id='navEducation'><h1 class='center'>Education</h1></div></div>
+						<div class="col-md-3"><a href='#' class='dud'><div class='frontNav' id='navProficiencies'>
+							<h1 class='center'>Proficiencies</h1>
+							<img src='images/nav/proficiencies.png' class='frontNavImg'/>
+						</div></a></div>
+						<div class="col-md-3"><a href='#' class='dud'><div class='frontNav' id='navProjects'>
+							<h1 class='center'>Projects</h1>
+							<img src='images/nav/projects.png' class='frontNavImg'/>
+						</div></a></div>
+						<div class="col-md-3"><a href='#' class='dud'><div class='frontNav' id='navWork'>
+							<h1 class='center'>Work</h1>
+							<img src='images/nav/grabcad.jpg' class='frontNavImg'/>
+						</div></a></div>
+						<div class="col-md-3"><a href='#' class='dud'><div class='frontNav' id='navEducation'>
+							<h1 class='center'>Education</h1>
+							<img src='images/nav/olin.png' class='frontNavImg'/>
+						</div></a></div>
 					</div>
 				</div>
 			</div>
-			<!-- <img src= 'images/test.png' id='test'> -->
-<!-- 			<div class="col-md-2 frontNav"></div>
-			<div class="col-md-2 frontNav"></div>
-			<div class="col-md-2 frontNav"></div>
-			<div class="col-md-2 frontNav"></div>
-			<div class="col-md-2 frontNav"></div>
-			<div class="col-md-2 frontNav"></div> -->
 		</div>
 	</div>
 	<div id='proficiencyContainer'>
@@ -85,14 +90,14 @@
 		</div>
       </div>
 	</div>
-	<div id='schoolContainer'>
-		<a href="#"><div id='schoolTitleContainer' class='titleContainer' data-title='Education'>
+	<div id='educationContainer'>
+		<a href="#" class='titleLink'><div id='educationTitleContainer' class='titleContainer' data-title='Education'>
 			<h1 class='center title' id='projectsTitle'>Education</h1>
 		</div></a>
 		<div class='container marketing'>
 			<div class="row featurette">
 				<div class="col-md-7">
-					<h2 class="featurette-heading" id='schoolTitle'>Olin</h2>
+					<h2 class="featurette-heading" id='schoolTitle'>Olin College <span class="text-muted"> of Engineering</span></h2>
 					<p class="lead">
 						September 2012 - present
 						<ul class='lead'>
@@ -110,16 +115,17 @@
 				<img class="featurette-image img-responsive" id='olinImg' src="images/olin.jpg" alt="500x500">
 			</div>
 		</div>
+	</div>
+	<div id="backToTop" style="display: block;">
+		<img src="images/nav/backTop.png"><p>TOP</p>
+	</div>
 	<!-- Proficiencies cloud -->
 	<!-- <div class='proficiencyPiece' id='python'></div>
 	<div class='proficiencyPiece' id='objectivec'></div> -->
 </body>
 
 <script>
-//draw divs
-var profPic = $('#langaugesAndPlatformsImg');
-// $('#python').height(profPic.height());
- // $('#python').top(profPic.position().top);
+
 $( document ).ready(function() {
 	sizeGlows();
 });
@@ -130,14 +136,12 @@ $('.titleContainer').on('click', function (){
 	}, 700);
 	$(this).html("<h1 class='center title' id='proficienciesTitle'>" + $(this).data('title') + "</h1>");
 });
-$(window).scroll(function(){
-	$(proficiencyTitleContainer).html("<h1 class='center title' id='proficienciesTitle'>Proficiencies</h1>");
-	// $('html body').stop(true, true);
-});
 
 $( window ).resize(function() {
 	sizeGlows();
 });
+
+//project fading
 $('.project').on('mouseover', function (){
 	$('.project').not(this).animate({
 		opacity: .3
@@ -146,7 +150,6 @@ $('.project').on('mouseover', function (){
 		queue: false
 	});
 });
-
 $('.project').on('mouseout', function (){
 	$('.project').animate({
 		opacity: 1
@@ -155,6 +158,49 @@ $('.project').on('mouseout', function (){
 		queue: false
 	});
 });
+
+$('#navProficiencies').click(function(event){
+	event.preventDefault();
+	$('html, body').animate({
+		scrollTop: $('#proficiencyContainer').offset().top
+	}, 700);
+})
+
+$('#navProjects').click(function(event){
+	event.preventDefault();
+	$('html, body').animate({
+		scrollTop: $('#projectsContainer').offset().top
+	}, 700);
+})
+
+$('#navWork').click(function(event){
+	event.preventDefault();
+	$('html, body').animate({
+		scrollTop: $('#workContainer').offset().top
+	}, 700);
+})
+
+$('#navEducation').click(function(event){
+	event.preventDefault();
+	$('html, body').animate({
+		scrollTop: $('#educationContainer').offset().top
+	}, 700);
+})
+
+//scroll to top:
+$(window).scroll(function() {
+		if($(window).scrollTop() > 200) {	
+			$("#backToTop").fadeIn(250);
+		} else {	
+			$("#backToTop").fadeOut(250);
+		}
+	});
+
+	$("#backToTop").on("click",function(){
+		$("html, body").animate({
+			scrollTop: 0
+		},1000);
+	});
 
 function sizeGlows(){
 	var profPic = $('#langaugesAndPlatformsImg');
@@ -173,11 +219,10 @@ function sizeGlows(){
 	// $('#').css('width', imageWidth * 1);
 	// $('#').css('height', imageHeight * 1);
 }
-// $('.project').mouseover(function(){
-// 	$(this).animate({
-// 		$(this).css()
-// 	}, 1000);
-// });
+
+$('.dud').click( function (event){
+	event.preventDefault();
+});
 
 $('.titleLink').click( function (event){
 	event.preventDefault();
