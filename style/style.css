@@ -51,6 +51,7 @@
 
   .featurette-heading {
     font-size: 50px;
+    margin-top: 50px;
   }
 
 }
@@ -101,7 +102,12 @@ body{
 }
 
 #workContainer{
-	height: 100%;
+	min-height: 100%;
+	padding-bottom: 40px;
+}
+
+#workTitle{
+	z-index: 999;
 }
 
 #grabcadAndroid{
@@ -109,7 +115,7 @@ body{
 }
 
 #projectsContainer{
-	height: 110%;
+	min-height: 100%;
 }
 
 #schoolContainer{
@@ -126,20 +132,6 @@ body{
 	background-size: 30%;
 }*/
 
-#test{
-	-webkit-mask-image: url('../images/mask.png');
-	-webkit-mask-size: 70%;
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-position: center;
-}
-
-#test:hover{
-	-webkit-mask-image: url('../images/mask.png');
-	-webkit-mask-size: 80%;
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-position: center;
-}
-
 .title{
 	margin-top: 0px;
 	padding-top: 20px;
@@ -154,11 +146,17 @@ body{
 
 }
 
-.project{
+.top.project{
 	/*position: absolute;*/
 	/*background: url('../images/mask.png') no-repeat center;*/
-	padding-top: 40px;
 	background-size: 100%;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.bottom.project{
+	background-size: 100%;
+	margin-bottom: 60px;
 }
 
 .mask{
@@ -168,6 +166,7 @@ body{
 	vertical-align: center;
 	width: 100%;
 	position: absolute;
+	z-index: 0;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
