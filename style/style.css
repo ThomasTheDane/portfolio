@@ -288,7 +288,7 @@ body{
 	border: none;
 	position: absolute;
 	width: 50px;
-	height: auto;
+	min-height: auto;
 	z-index: 999;
 }
 
@@ -313,6 +313,7 @@ a:hover{
 }
 
 #projectContentImgTeamsnake{
+	height: 70%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -320,6 +321,7 @@ a:hover{
 }
 
 #projectContentImgCryptography{
+	height: 90%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -342,4 +344,25 @@ a:hover{
 
 .itunes{
 	width: 200px;
+}
+
+#proficiencyFloater{
+	border: 5px solid;
+	border-color: #000000;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	background-color: #333333;
+	min-width: 300;
+	width: 20%;
+	color: #FFFFFF;
+	position: absolute;
+	z-index: 999;
+	float: left;
+}
+
+.minimize{
+	width: 0px;
+	height: 0px;
 }
