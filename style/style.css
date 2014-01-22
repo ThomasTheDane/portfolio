@@ -77,9 +77,11 @@ body{
 }
 
 #nameImage{
-	height: 50%;
+	height: 35%;
 	width: 80%;
 	display: block;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -90,7 +92,7 @@ body{
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	height: 40%;
 	border-style:solid;
 	border-width:5px;
@@ -118,11 +120,17 @@ body{
 	margin-right: auto;
 }
 
-#navProficiencies{
-/*	 background-image: url('../images/languages/allLanguagesAndPlatforms.png');
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 background-origin: content-box;*/
+#contactMe{
+	text-align: center;
+	margin:0px;
+}
+
+.contactRef{
+	width: 100px;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
 }
 
 #proficiencyContentContainer{
@@ -259,15 +267,79 @@ body{
 	width: 100%;
 }
 
-.proficiencyPiece{
-	border-style:solid;
-	border-width:5px;
+#projectPageTop{
+	background-color: #222222;	
+	width: 100%;
+	height: 55%;
+	z-index: 999;
+	/*margin-top: 30px;*/
+	color: #FFFFFF;
+}
+
+#projectPageBottom{
+	background-color: #222222;	
+	width: 100%;
+	height: 55%;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+}
+
+#projectUpArrow{
+	border: none;
 	position: absolute;
-	width: 100px;
-	/*height: 100px;*/
-	/*left: 100px;*/
+	width: 50px;
+	height: auto;
+	z-index: 999;
 }
 
 a:hover{
 	text-decoration: none;
+}
+
+#projectContentImgOurtube{
+	height: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#projectContentImgCubeon{
+	height: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#projectContentImgTeamsnake{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+}
+
+#projectContentImgCryptography{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.proficiencyPiece{
+	border-style:solid;
+	border-width:0px;
+	position: absolute;
+	width: 100px;
+}
+
+.glower{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left:-10%;
+}
+
+.itunes{
+	width: 200px;
 }

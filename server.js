@@ -19,4 +19,8 @@ app.get('/', function (req, res){
 app.get('/transcript', function (req, res){
 	sys.log('sending transcript');
 	res.sendfile(__dirname + '/ThomasNattestadTranscript.pdf');
-})
+});
+
+app.get('/boatPaper', function(req, res){
+	res.sendfile(__dirname + '/BoatsandshitFinalWriteup.pdf')
+});

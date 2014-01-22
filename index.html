@@ -3,12 +3,14 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src='scripts/app.js'></script>
 	<link href='style/style.css' rel='stylesheet' />
 </head>
 <body>
+	<!-- <img src='images/nav/upArrow.png' id='projectUpArrow' /> -->
 	<div id='frontContainer'>
 		<div id='nameContainer'>
-			<img src="images/name.png" id='nameImage'/>
+			<img src="images/name2.png" id='nameImage'/>
 		</div>
 		<div class='row' id='frontDirectory'>
 			<div class='container marketing'>
@@ -34,6 +36,11 @@
 				</div>
 			</div>
 		</div>
+		<div id='contactMe'>
+			<a href="https://github.com/thomasnat1"><img src='images/nav/github.png' class='contactRef'/></a>
+			<a href="https://linkedin.com/pub/thomas-nattestad/68/979/55"><img src='images/nav/linkedin.png' class='contactRef'/></a>
+			<a href="mailto:thomas.nattestad@students.olin.edu"><img src='images/nav/email.png' class='contactRef'></a>
+		</div>
 	</div>
 	<div id='proficiencyContainer'>
 		<a href="#" class='titleLink'><div id='proficiencyTitleContainer' class='titleContainer' data-title="Proficiencies">
@@ -50,15 +57,22 @@
 		<div class='container marketing'>
 			<div class="row featurette">
 				<div class='row' id='projectsList'>
-					<div class="col-md-3 top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/ourtube.png' class='projectImg'/></div>
-					<div class="col-md-3 top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/cubeon.png' class='projectImg'/></div>
-					<div class="col-md-3 top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/teamsnake.png' class='projectImg'/></div>
-					<div class="col-md-3 top project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/cryptography.png' class='projectImg'/></div>
+					<a href='#' class='dud'><div class="col-xs-3 top project" id='ourtubeProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/ourtube.png' class='projectImg'/></div></a>
+					<a href='#' class='dud'><div class="col-xs-3 top project" id='cubeonProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/cubeon.png' class='projectImg'/></div></a>
+					<a href='#' class='dud'><div class="col-xs-3 top project" id='teamsnakeProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/teamsnake.png' class='projectImg'/></div></a>
+					<a href='#' class='dud'><div class="col-xs-3 top project" id='cryptographyProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/cryptography.png' class='projectImg'/></div></a>
+					
+					<div id='projectPageTop' class='col-xs-12'>
+						
+					</div>
 
-					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/sorting.png' class='projectImg'/></div>
-					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/inibbles.png' class='projectImg'/></div>
-					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/videographer.png' class='projectImg'/></div>
-					<div class="col-md-3 bottom project"><img src= 'images/mask.png' class='mask'/><img src='images/projects/boat.png' class='projectImg'/></div>
+					<a href='#' class='dud'><div class="col-xs-3 bottom project" id='sortingProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/sorting.png' class='projectImg'/></div></a>
+					<a href='#' class='dud'><div class="col-xs-3 bottom project" id='inibblesProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/inibbles.png' class='projectImg'/></div></a>
+					<a href='#' class='dud'><div class="col-xs-3 bottom project" id='videographerProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/videographer.png' class='projectImg'/></div></a>
+					<a href='#' class='dud'><div class="col-xs-3 bottom project" id='boatProject'><img src= 'images/mask.png' class='mask'/><img src='images/projects/boat.png' class='projectImg'/></div></a>
+
+					<div id='projectPageBottom' class='col-xs-12'>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -120,114 +134,30 @@
 		<img src="images/nav/backTop.png"><p>TOP</p>
 	</div>
 	<!-- Proficiencies cloud -->
-	<!-- <div class='proficiencyPiece' id='python'></div>
-	<div class='proficiencyPiece' id='objectivec'></div> -->
+	<div class='proficiencyPiece' id='python'><img src='images/glowing/python.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='java'><img src='images/glowing/java.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='ruby'><img src='images/glowing/ruby.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='c++'><img src='images/glowing/c++.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='javascript'><img src='images/glowing/javascript.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='htmlcss'><img src='images/glowing/htmlcss.png' class='glower'/></div>
+	<!-- 
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div>
+	<div class='proficiencyPiece' id='objectivec'><img src='images/glowing/objectivec.png' class='glower'/></div> -->
+	
 </body>
 
-<script>
-
-$( document ).ready(function() {
-	sizeGlows();
-});
-
-$('.titleContainer').on('click', function (){
-	$('html, body').animate({
-		scrollTop: $(this).offset().top
-	}, 700);
-	$(this).html("<h1 class='center title' id='proficienciesTitle'>" + $(this).data('title') + "</h1>");
-});
-
-$( window ).resize(function() {
-	sizeGlows();
-});
-
-//project fading
-$('.project').on('mouseover', function (){
-	$('.project').not(this).animate({
-		opacity: .3
-	}, {
-		duration: 500,
-		queue: false
-	});
-});
-$('.project').on('mouseout', function (){
-	$('.project').animate({
-		opacity: 1
-	}, {
-		duration: 500,
-		queue: false
-	});
-});
-
-$('#navProficiencies').click(function(event){
-	event.preventDefault();
-	$('html, body').animate({
-		scrollTop: $('#proficiencyContainer').offset().top
-	}, 700);
-})
-
-$('#navProjects').click(function(event){
-	event.preventDefault();
-	$('html, body').animate({
-		scrollTop: $('#projectsContainer').offset().top
-	}, 700);
-})
-
-$('#navWork').click(function(event){
-	event.preventDefault();
-	$('html, body').animate({
-		scrollTop: $('#workContainer').offset().top
-	}, 700);
-})
-
-$('#navEducation').click(function(event){
-	event.preventDefault();
-	$('html, body').animate({
-		scrollTop: $('#educationContainer').offset().top
-	}, 700);
-})
-
-//scroll to top:
-$(window).scroll(function() {
-		if($(window).scrollTop() > 200) {	
-			$("#backToTop").fadeIn(250);
-		} else {	
-			$("#backToTop").fadeOut(250);
-		}
-	});
-
-	$("#backToTop").on("click",function(){
-		$("html, body").animate({
-			scrollTop: 0
-		},1000);
-	});
-
-function sizeGlows(){
-	var profPic = $('#langaugesAndPlatformsImg');
-	// $('#python').position(profPic.position());
-	imageStartX = ($(window).width() / 2) - (profPic.width() / 2);
-	imageStartY = profPic.position().top;
-	imageWidth = profPic.width();
-	imageHeight = profPic.height();
-	$('#python').css('left', imageStartX);
-	$('#python').css('top', imageStartY + 20);
-	$('#python').css('height', imageHeight * .33);
-	$('#python').css('width', imageWidth * .17);
-
-	// $('#').css('left', imageStartX);
-	// $('#').css('top', imageStartX);
-	// $('#').css('width', imageWidth * 1);
-	// $('#').css('height', imageHeight * 1);
-}
-
-$('.dud').click( function (event){
-	event.preventDefault();
-});
-
-$('.titleLink').click( function (event){
-	event.preventDefault();
-});
-
-</script>
 
 </html>
