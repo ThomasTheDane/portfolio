@@ -91,7 +91,7 @@ $( document ).ready(function() {
 		$('#proficiencyFloater').html('<h4>Basic building blocks for other frameworks. Very familar with its simple structure and available markup properties. Used to write the site you see here.</h4>');
 	});
 	$('.proficiencyPiece#c').on('mouseover', function(){
-		$('#proficiencyFloater').html('<h4>Used as primary language for a semester long programming class. Thorough appreciate for its multitude of low level features and design choices.</h4>');
+		$('#proficiencyFloater').html('<h4>Used as primary language for a semester long programming class. Thorough appreciation for its multitude of low level features and design choices.</h4>');
 	});
 	$('.proficiencyPiece#android').on('mouseover', function(){
 		$('#proficiencyFloater').html('<h4>Worked on android full time for several months. Full experience with majority of features including activities, views, xml layout, asynchronous loading and file caching.</h4>');
