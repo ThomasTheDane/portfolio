@@ -110,6 +110,7 @@ body{
 
 .frontNav{
 	width: 275px;
+	height: 300px;
 	font-weight: bolder;
 	display: block;
 	margin-top: 10px;
@@ -161,6 +162,7 @@ body{
 
 #langaugesAndPlatformsImg{
 	height: 87%;
+	max-height: 2000px;
 	max-width: 100%;
 	display: block;
     margin-left: auto;
