@@ -30,8 +30,7 @@ $( document ).ready(function() {
 	});
 
 	$('.proficiencyPiece').fadeTo(1,.01);
-	// $('#langaugesAndPlatformsImg').fadeTo(1,.5);
-
+	
 	$('.proficiencyPiece').on('mouseover', function (){
 		$('#proficiencyFloater').animate({
 			opacity: 1
