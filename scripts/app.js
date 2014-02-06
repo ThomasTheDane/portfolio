@@ -18,12 +18,12 @@ $( document ).ready(function() {
 		sizeGlows();
 	});
 
-	$(document).bind('mousemove', function(e){
-		$('#proficiencyFloater').css({
-			left:  e.pageX - $('#proficiencyFloater').width() / 2,
-			top:   e.pageY + 20
-		});
-	});
+	// $(document).bind('mousemove', function(e){
+	// 	$('#proficiencyFloater').css({
+	// 		left:  e.pageX - $('#proficiencyFloater').width() / 2,
+	// 		top:   e.pageY + 20
+	// 	});
+	// });
 
 	$('#langaugesAndPlatformsImg').on('mouseover', function (){
 		sizeGlows();
@@ -31,7 +31,14 @@ $( document ).ready(function() {
 
 	$('.proficiencyPiece').fadeTo(1,.01);
 	
-	$('.proficiencyPiece').on('mouseover', function (){
+	$('.proficiencyPiece').on('mousemove', function (e){
+		$('#proficiencyFloater').css({
+			left:  e.pageX - $('#proficiencyFloater').width() / 2,
+			top:   e.pageY + 20
+		});
+	});
+
+	$('.proficiencyPiece').on('mouseover', function (e){
 		$('#proficiencyFloater').animate({
 			opacity: 1
 		}, {
@@ -46,19 +53,12 @@ $( document ).ready(function() {
 		});
 	});
 
-	$('#proficiencyFloater').animate({
-		opacity: 0
-	}, {
-		duration: 1,
-		queue: false
-	});
-
 	$('.proficiencyPiece').on('mouseout', function (){
 		$('#proficiencyFloater').animate({
-			opacity: 0
+			opacity: 0,
 		}, {
 			duration: 400,
-			queue: false
+			queue: false,
 		});
 
 		$(this).animate({
