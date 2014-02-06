@@ -285,16 +285,15 @@ body{
 #projectPageTop{
 	background-color: #222222;	
 	width: 100%;
-	height: 55%;
+	padding-bottom: 30px;
 	z-index: 999;
-	/*margin-top: 30px;*/
 	color: #FFFFFF;
 }
 
 #projectPageBottom{
 	background-color: #222222;	
 	width: 100%;
-	height: 55%;
+	padding-bottom: 30px;
 	margin-bottom: 20px;
 	color: #FFFFFF;
 }
@@ -312,7 +311,6 @@ a:hover{
 }
 
 #projectContentImgOurtube{
-	height: 90%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -320,7 +318,6 @@ a:hover{
 }
 
 #projectContentImgCubeon{
-	height: 90%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -328,7 +325,6 @@ a:hover{
 }
 
 #projectContentImgTeamsnake{
-	height: 70%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -336,11 +332,38 @@ a:hover{
 }
 
 #projectContentImgCryptography{
-	height: 90%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
+}
+
+#projectContentImgSorting{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#projectContentImgINibbles{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#projectContentImgVideographer{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#projectContentImgBoat{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 }
 
 .proficiencyPiece{
