@@ -28,7 +28,7 @@ $( document ).ready(function() {
 	$('#langaugesAndPlatformsImg').on('mouseover', function (){
 		sizeGlows();
 	});
-
+	$('#proficiencyFloater').css('opacity', 0);
 	$('.proficiencyPiece').fadeTo(1,.01);
 	
 	$('.proficiencyPiece').on('mousemove', function (e){
