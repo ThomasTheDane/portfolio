@@ -78,7 +78,7 @@ $( document ).ready(function() {
 	});
 
 	$('.proficiencyPiece#objectivec').on('mouseover', function(){
-		$('#proficiencyFloater').html('<h4>What I used to write my 13 iPhone applications in over course of a couple of years. Full understanding of several caveats such as blocks.</h4>');
+		$('#proficiencyFloater').html('<h4>What I used to write my 13 iPhone applications in over the course of a couple of years. Full understanding of several caveats such as blocks.</h4>');
 	});
 	$('.proficiencyPiece#ruby').on('mouseover', function(){
 		$('#proficiencyFloater').html("<h4>Explored independently for use with the powerful rails framework. Worked with it for a couple of weeks on random projects and gained appreciate for its mostly unique style.</h4>");
