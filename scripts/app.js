@@ -386,5 +386,4 @@ function sizeGlows(){
 	$('#ember').css('top', imageStartY + imageHeight * .675);
 	$('#ember').css('height', imageHeight * .305);
 	$('#ember').css('width', imageWidth * .19);
-
 }
